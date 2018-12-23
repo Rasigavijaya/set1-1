@@ -9,7 +9,7 @@ void main()
  while(n!=0)
  {
   rem=n%10;
-  sum=sum+rem;
+  sum++;
   n=n/10;
  }
  printf("%d",sum);
