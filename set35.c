@@ -1,0 +1,35 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+ int a[50],k,i,n,j,temp;
+ clrscr();
+ scanf("%d",&n);
+ for(i=0;i<n;i++)
+ {
+  scanf("%d",&a[i]);
+ }
+ for(i=0;i<n;i++)
+ {
+  for(j=i+1;j<n;j++)
+  {
+   if(a[i]>a[j])
+   {
+    temp=a[i];
+    a[i]=a[j];
+    a[j]=temp;
+   }
+  }
+  }
+  if(n%2==0)
+  {
+   n=n/2;
+  printf("%d",a[n]);
+  }
+  if(n%2!=0)
+  {
+   n=(n/2)+1;
+   printf("%d",a[n]);
+  }
+ getch();
+ }
