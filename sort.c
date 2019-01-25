@@ -1,5 +1,4 @@
 #include<stdio.h>
-#include<conio.h>
 void main()
 {
  int a[50],k,i,n,j,temp;
@@ -25,5 +24,4 @@ void main()
  {
   printf("%d",a[i]);
  }
- getch();
  }
